@@ -1,13 +1,51 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.NET.Sample", "Northwind.NET.Sample\Northwind.NET.Sample.csproj", "{657E6A5E-5FA1-4A80-93D0-98A4B494A2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemsFilter.net6", "ItemsFilter.net6\ItemsFilter.net6.csproj", "{D70688E6-6B4F-47EB-B17A-6F6B53A97113}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsFilter", "ItemsFilter\ItemsFilter.csproj", "{AAB57BB1-A448-457C-AD53-16B32A1C1F1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nortwind.Model.net6", "Nortwind.Model.net6\Nortwind.Model.net6.csproj", "{07B2F821-5F3B-49CF-B99D-098F8CB82C60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.NET.EF6Model", "Northwind.NET.EF6Model\Northwind.NET.EF6Model.csproj", "{A7D88EEF-3CD3-4ACB-A460-151554D98BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.ViewModel.net6", "Northwind.ViewModel.net6\Northwind.ViewModel.net6.csproj", "{6619D8B7-515F-40A2-BA09-4DCB0966A35D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemsFilter.net6.Test", "ItemsFilter.net6.Test\ItemsFilter.net6.Test.csproj", "{79E0610F-AD68-434E-9A17-36897479FEEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49DFB628-00A6-4F8F-ABD9-A854C5030A2C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nortwind.Sample.net6", "Nortwind.Sample.net6\Nortwind.Sample.net6.csproj", "{1BDB7CBA-939A-4546-AA25-FB389D9712F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{8E91E267-C0AA-4437-963E-ED9931228AEF}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\ALittleBackground.md = Docs\ALittleBackground.md
+		Docs\Examle1.EmployeesView.md = Docs\Examle1.EmployeesView.md
+		Docs\Examle2.CategoriesView.md = Docs\Examle2.CategoriesView.md
+		Docs\Examle3.ProductsView.md = Docs\Examle3.ProductsView.md
+		Docs\Examle4.ProductsView.md = Docs\Examle4.ProductsView.md
+		Docs\Examle5.OrdersView.md = Docs\Examle5.OrdersView.md
+		Docs\Examle6.OrdersView.md = Docs\Examle6.OrdersView.md
+		Docs\Examle7.CustomersView.md = Docs\Examle7.CustomersView.md
+		Docs\ExamplesOfQuickFilterView.md = Docs\ExamplesOfQuickFilterView.md
+		Docs\Readme.md = Docs\Readme.md
+		Docs\Summary.md = Docs\Summary.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Picture", "Picture", "{66573341-D383-4475-848D-696C3C42B9DF}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Picture\Pic1.gif = Docs\Picture\Pic1.gif
+		Docs\Picture\Pic10.gif = Docs\Picture\Pic10.gif
+		Docs\Picture\Pic2.gif = Docs\Picture\Pic2.gif
+		Docs\Picture\Pic3.gif = Docs\Picture\Pic3.gif
+		Docs\Picture\Pic4.gif = Docs\Picture\Pic4.gif
+		Docs\Picture\Pic5.gif = Docs\Picture\Pic5.gif
+		Docs\Picture\Pic6.gif = Docs\Picture\Pic6.gif
+		Docs\Picture\Pic7.gif = Docs\Picture\Pic7.gif
+		Docs\Picture\Pic8.gif = Docs\Picture\Pic8.gif
+		Docs\Picture\Pic9.gif = Docs\Picture\Pic9.gif
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,20 +53,34 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{657E6A5E-5FA1-4A80-93D0-98A4B494A2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{657E6A5E-5FA1-4A80-93D0-98A4B494A2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{657E6A5E-5FA1-4A80-93D0-98A4B494A2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{657E6A5E-5FA1-4A80-93D0-98A4B494A2DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AAB57BB1-A448-457C-AD53-16B32A1C1F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAB57BB1-A448-457C-AD53-16B32A1C1F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAB57BB1-A448-457C-AD53-16B32A1C1F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAB57BB1-A448-457C-AD53-16B32A1C1F1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7D88EEF-3CD3-4ACB-A460-151554D98BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7D88EEF-3CD3-4ACB-A460-151554D98BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7D88EEF-3CD3-4ACB-A460-151554D98BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7D88EEF-3CD3-4ACB-A460-151554D98BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70688E6-6B4F-47EB-B17A-6F6B53A97113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70688E6-6B4F-47EB-B17A-6F6B53A97113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70688E6-6B4F-47EB-B17A-6F6B53A97113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70688E6-6B4F-47EB-B17A-6F6B53A97113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B2F821-5F3B-49CF-B99D-098F8CB82C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B2F821-5F3B-49CF-B99D-098F8CB82C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B2F821-5F3B-49CF-B99D-098F8CB82C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B2F821-5F3B-49CF-B99D-098F8CB82C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6619D8B7-515F-40A2-BA09-4DCB0966A35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6619D8B7-515F-40A2-BA09-4DCB0966A35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6619D8B7-515F-40A2-BA09-4DCB0966A35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6619D8B7-515F-40A2-BA09-4DCB0966A35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E0610F-AD68-434E-9A17-36897479FEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E0610F-AD68-434E-9A17-36897479FEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E0610F-AD68-434E-9A17-36897479FEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E0610F-AD68-434E-9A17-36897479FEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDB7CBA-939A-4546-AA25-FB389D9712F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDB7CBA-939A-4546-AA25-FB389D9712F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDB7CBA-939A-4546-AA25-FB389D9712F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDB7CBA-939A-4546-AA25-FB389D9712F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66573341-D383-4475-848D-696C3C42B9DF} = {8E91E267-C0AA-4437-963E-ED9931228AEF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57E32A14-EF7C-432F-8C83-EB23E463C426}
 	EndGlobalSection
 EndGlobal

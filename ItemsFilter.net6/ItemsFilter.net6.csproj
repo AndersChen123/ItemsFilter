@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <DebugType>full</DebugType>
+    <BaseOutputPath>..\bin</BaseOutputPath>
+    <Description>WPF ItemsFilter Extension for any ItemsControl, such as DataGrid.</Description>
+    <Copyright>Copyright ©2013,2015, 2022 Bolapansoft</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageIcon>ItemsFilter.png</PackageIcon>
+    <RepositoryUrl>https://github.com/MishkinIN/ItemsFilter</RepositoryUrl>
+    <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+    <Authors>MishkinIN</Authors>
+    <Company>Bolapansoft</Company>
+    <RootNamespace>BolapanControl.ItemsFilter</RootNamespace>
+    <ApplicationIcon>ItemsFilter.ico</ApplicationIcon>
+    <AssemblyVersion>2.0.0.2</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="ItemsFilter.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="View\Converters\" />
+  </ItemGroup>
+
+   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ItemsFilter.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="ItemsFilter.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\ItemsFilterStyle.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>

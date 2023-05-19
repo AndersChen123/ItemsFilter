@@ -1,0 +1,21 @@
+﻿
+<sampleData:EqualFilter 
+    xmlns:sampleData="clr-namespace:Expression.Blend.SampleData.CategoriesFilter" 
+    CountAttachedFilterControls="1" 
+    Name="Choose category to view:" 
+    IsActive="True">
+	<sampleData:EqualFilter.AvailableValues>
+		<sampleData:Category Name="Beverages" Description="Soft drinks, coffees, teas, beers, and ales" Picture="CategoriesFilter_Files\image01.png"/>
+		<sampleData:Category Name="Condiments" Description="Sweet and savory sauces, relishes, spreads, and seasonings" Picture="CategoriesFilter_Files\image02.png"/>
+		<sampleData:Category Name="Confections" Description="Desserts, candies, and sweet breads" Picture="CategoriesFilter_Files\image03.png"/>
+		<sampleData:Category Name="Dairy Products" Description="Cheeses" Picture="CategoriesFilter_Files\image04.png"/>
+		<sampleData:Category Name="Grains/Cereals" Description="Breads, crackers, pasta, and cereal" Picture="CategoriesFilter_Files\image05.png"/>
+		<sampleData:Category Name="Meat/Poultry" Description="Prepared meats" Picture="CategoriesFilter_Files\image01.png"/>
+		<sampleData:Category Name="Produce" Description="Dried fruit and bean curd" Picture="CategoriesFilter_Files\image02.png"/>
+		<sampleData:Category Name="Seafood" Description="Seaweed and fish" Picture="CategoriesFilter_Files\image03.png"/>
+	</sampleData:EqualFilter.AvailableValues>
+	<sampleData:EqualFilter.SelectedValues>
+		<sampleData:Category Name="Beverages" Description="Soft drinks, coffees, teas, beers, and ales" Picture="CategoriesFilter_Files\image04.png"/>
+		<sampleData:Category Name="Condiments" Description="Sweet and savory sauces, relishes, spreads, and seasonings" Picture="CategoriesFilter_Files\image05.png"/>
+	</sampleData:EqualFilter.SelectedValues>
+</sampleData:EqualFilter>

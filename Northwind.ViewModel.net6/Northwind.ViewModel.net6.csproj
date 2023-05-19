@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <BaseOutputPath>..\bin</BaseOutputPath>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+    <Page Remove="bin\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <DesignDataWithDesignTimeCreatableTypes Include="SampleData\Customer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DesignDataWithDesignTimeCreatableTypes>
+    <DesignDataWithDesignTimeCreatableTypes Include="SampleData\Order.xaml">
+      <SubType>Designer</SubType>
+    </DesignDataWithDesignTimeCreatableTypes>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Command\" />
+    <Folder Include="SampleData\CategoriesFilter\CategoriesFilter_Files\" />
+    <Folder Include="Shaders\" />
+    <Folder Include="ViewModel\CustomersComboBoxFilter\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ItemsFilter.net6\ItemsFilter.net6.csproj" />
+    <ProjectReference Include="..\Nortwind.Model.net6\Nortwind.Model.net6.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="SampleData\CategoriesFilter\CategoriesFilter_Files\image01.png" Link="SampleData\CategoriesFilter\CategoriesFilter_Files\image01.png" />
+    <Resource Include="SampleData\CategoriesFilter\CategoriesFilter_Files\image02.png" Link="SampleData\CategoriesFilter\CategoriesFilter_Files\image02.png" />
+    <Resource Include="SampleData\CategoriesFilter\CategoriesFilter_Files\image03.png" Link="SampleData\CategoriesFilter\CategoriesFilter_Files\image03.png" />
+    <Resource Include="SampleData\CategoriesFilter\CategoriesFilter_Files\image04.png" Link="SampleData\CategoriesFilter\CategoriesFilter_Files\image04.png" />
+    <Resource Include="SampleData\CategoriesFilter\CategoriesFilter_Files\image05.png" Link="SampleData\CategoriesFilter\CategoriesFilter_Files\image05.png" />
+    <Resource Include="Shaders\MonochromeEffect.ps" Link="Shaders\MonochromeEffect.ps">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="WorkspaceInstance.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+</Project>
